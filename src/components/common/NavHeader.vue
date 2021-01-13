@@ -1,17 +1,11 @@
 <template>
-  <div id="app">
+  <div class="nav-header">
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
-  data () {
-  },
-
-  components: {
-  }
+    name:'nav-header'
 }
 </script>
 
