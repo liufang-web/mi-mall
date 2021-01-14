@@ -1,13 +1,13 @@
 module.exports = {
     configureWebpack: {
-        resovle: {
+        resolve: {
             alias: {
                 'assets': '@/assets',
                 'components': '@/components',
                 'network': '@/network',
                 'pages': '@/pages',
                 'storage': '@/storage',
-                'util': '@/util'
+                'utils': '@/utils'
             }
         },
     },
