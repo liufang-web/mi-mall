@@ -4,7 +4,7 @@ import Router from 'vue-router'
 
 const Home = () => import('pages/home/Home')
 const Index = () => import('pages/home/Index')
-// 调用路由
+// 加载插件路由
 Vue.use(Router)
 // 创建路由
 const routes = [
