@@ -3,16 +3,23 @@ import router from './router'
 import axios from 'axios'
 import vueAxios from 'vue-axios'
 import App from './App.vue'
-import env from './env'
+// import env from './env'
 
-// 加载插件
 Vue.use(vueAxios, axios)
+
+// 定义mock开关
+const mock = true
+if (mock) {
+  // import预编译，提前编译；require执行时才会编译
+  require('./mcok/api')
+}
+
 // 根据前端跨域方式做调整，在这是代理proxy跨域，例如 /a/b: 显示/api/a/b——>实际代理后/a/b
 axios.defaults.baseURL = '/api'
 // 在8秒时间内返回，没返回报404，如果不设置，用户体验很差
 axios.defaults.timeout = 8000
 // 根据环境变量不同获取不同的请求地址
-axios.defaults.baseURL = env.baseURL
+// axios.defaults.baseURL = env.baseURL
 
 // 响应错误拦截
 /**
