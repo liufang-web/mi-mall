@@ -11,7 +11,7 @@ Vue.use(vueAxios, axios)
 const mock = true
 if (mock) {
   // import预编译，提前编译；require执行时才会编译
-  require('./mcok/api')
+  require('./mock/api')
 }
 
 // 根据前端跨域方式做调整，在这是代理proxy跨域，例如 /a/b: 显示/api/a/b——>实际代理后/a/b
