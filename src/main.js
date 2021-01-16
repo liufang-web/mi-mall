@@ -3,7 +3,7 @@ import router from './router'
 import axios from 'axios'
 import vueAxios from 'vue-axios'
 import App from './App.vue'
-import env from './env'
+// import env from './env'
 
 // 加载插件
 Vue.use(vueAxios, axios)
@@ -12,7 +12,7 @@ axios.defaults.baseURL = '/api'
 // 在8秒时间内返回，没返回报404，如果不设置，用户体验很差
 axios.defaults.timeout = 8000
 // 根据环境变量不同获取不同的请求地址
-axios.defaults.baseURL = env.baseURL
+// axios.defaults.baseURL = env.baseURL
 
 // 响应错误拦截
 /**
