@@ -1,21 +1,23 @@
 <template>
   <div id="app">
     <router-view></router-view>
+    <Home></Home>
   </div>
 </template>
 
 <script>
+import Home from 'pages/home/Home'
 export default {
   name: 'App',
   mounted() {
 
   },
   components: {
-
+    Home
   }
 }
 </script>
 
-<style>
-
+<style lang = 'scss'>
+@import 'assets/scss/reset.scss'
 </style>
