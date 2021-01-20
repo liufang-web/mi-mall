@@ -1,0 +1,81 @@
+{
+  "status": 0,
+  "data": {
+      "pageNum": 1,
+      "pageSize": 10,
+      "size": 2,
+      "orderBy": null,
+      "startRow": 1,
+      "endRow": 2,
+      "total": 2,
+      "pages": 1,
+      "list": [
+          {
+              "id": 1,
+              "categoryId": 3,
+              "name": "小米11",
+              "subtitle": "双十一促销",
+              "mainImage": "imgs/nav-img/nav-1.png",
+              "status":1,
+              "price": 3999
+          },
+          {
+              "id": 2,
+              "categoryId": 2,
+              "name": "小米10至尊版",
+              "subtitle": "双十一促销",
+              "mainImage": "imgs/nav-img/nav-2.png",
+              "status":1,
+              "price": 5299
+          },
+          {
+            "id": 3,
+            "categoryId": 3,
+            "name": "小米10至尊版",
+            "subtitle": "双十一促销",
+            "mainImage": "imgs/nav-img/nav-6.png",
+            "status":1,
+            "price": 5299
+          },
+          {
+            "id": 4,
+            "categoryId": 3,
+            "name": "小米10至尊版",
+            "subtitle": "双十一促销",
+            "mainImage": "imgs/nav-img/nav-3.png",
+            "status":1,
+            "price": 5299
+          },
+          {
+            "id": 5,
+            "categoryId": 2,
+            "name": "小米10至尊版",
+            "subtitle": "双十一促销",
+            "mainImage": "imgs/nav-img/nav-4.png",
+            "status":1,
+            "price": 5299
+          },
+          {
+            "id": 6,
+            "categoryId": 2,
+            "name": "小米10至尊版",
+            "subtitle": "双十一促销",
+            "mainImage": "imgs/nav-img/nav-5.png",
+            "status":1,
+            "price": 5299
+          }  
+      ],
+      "firstPage": 1,
+      "prePage": 0,
+      "nextPage": 0,
+      "lastPage": 1,
+      "isFirstPage": true,
+      "isLastPage": true,
+      "hasPreviousPage": false,
+      "hasNextPage": false,
+      "navigatePages": 8,
+      "navigatepageNums": [
+          1
+      ]
+  }
+}

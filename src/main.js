@@ -5,6 +5,13 @@ import vueAxios from 'vue-axios'
 import App from './App.vue'
 // import env from './env'
 
+// 定义mock开关
+const mock = true
+if (mock) {
+  // import预编译，提前编译；require执行时才会编译
+  require('./mock/api')
+}
+
 // 加载插件
 Vue.use(vueAxios, axios)
 // 根据前端跨域方式做调整，在这是代理proxy跨域，例如 /a/b: 显示/api/a/b——>实际代理后/a/b
@@ -32,6 +39,7 @@ axios.interceptors.response.use(function(response) {
 
 // vue中的一些console.log打印
 Vue.config.productionTip = false
+Vue.config.devtools = true
 
 new Vue({
   router,
